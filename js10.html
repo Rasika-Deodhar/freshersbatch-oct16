@@ -1,0 +1,39 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<script>
+			var arry = [1,2,3,4,5,6,7,8];
+			
+			document.write("Array is- <br>");
+			for(i=0;i<arry.length;i++)
+			{
+				document.write(arry[i] + "<br>");
+			}
+			
+			function Ascend()
+			{
+				document.write("Array in ascending order is- <br>");
+				arry.sort(function(a, b){return a-b});
+				for(i=0;i<arry.length;i++)
+				{
+					document.write(arry[i] + "<br>");
+				}
+			}
+			
+			function Descend()
+			{
+				document.write("Array in descending order is- <br>");
+				arry.sort(function(a, b){return b-a});
+				for(i=0;i<arry.length;i++)
+				{
+					document.write(arry[i] + "<br>");
+				}
+			}
+			
+		</script>
+		<input type="submit" value="Ascending" id="ascend" onclick="Ascend()"> <br>
+		<input type="submit" value="Descending" id="descend" onclick="Descend()"> <br>
+	</body>
+</html>
